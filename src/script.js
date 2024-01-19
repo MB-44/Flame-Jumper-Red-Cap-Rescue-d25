@@ -1,5 +1,5 @@
-const canvas = document.querySelector('canvas');
-const c = canvas.getContext('2d');
+// const canvas = document.querySelector('canvas');
+// const c = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight
@@ -8,6 +8,10 @@ var runSound = new Audio("../assets/run.mp3");
 var jumpSound = new Audio("../assets/jump.mp3");
 var deadSound = new Audio("../assets/dead.mp3");
 
+document.addEventListener("DOMContentLoaded", function() {
+    var canvas = document.getElementById('game-canvas');
+    var ctx = canvas.getContext('2d');
+})
 
 
 
